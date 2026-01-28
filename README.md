@@ -1,121 +1,129 @@
 # banking-atm-management-system
 🏦 Bank Management & ATM Simulation System (Java)
 
-A console-based banking application built using Core Java that simulates basic bank and ATM operations. This project demonstrates object-oriented design, transaction handling, and menu-driven program flow similar to real-world banking systems.
+A console-based banking application developed using Core Java that simulates real-world banking and ATM operations. This project demonstrates Object-Oriented Programming (OOP), transaction management, and modular application design.
 
-📌 Project Overview
+📖 Project Description
 
-This application allows a user to create and manage a bank account through two main modules:
+This system allows users to manage a bank account through two interactive modules:
 
-Bank Section – Full account management
+Bank Section – Full account management features
 
-ATM Section – Quick banking operations
+ATM Section – Quick access banking operations
 
-All transactions are recorded and can be reviewed anytime, just like a real banking system.
+All transactions are recorded and stored dynamically, allowing users to review their banking activity anytime.
 
 ✨ Features
 🏦 Bank Section
 
-Create a bank account with account holder name and account number
-
-Deposit money with validation
-
-Withdraw money with balance checking
-
-Link Aadhaar and PAN details
-
-Update account holder name
-
-View full transaction history
+✔ Create an account with account holder name and account number
+✔ Deposit money with amount validation
+✔ Withdraw money with balance checking
+✔ Link Aadhaar number
+✔ Link PAN number
+✔ Change account holder name
+✔ View complete transaction history
 
 🏧 ATM Section
 
-Withdraw cash
+✔ Withdraw cash
+✔ Check available balance
+✔ View Mini Statement (last 3 transactions)
 
-Check available balance
+🧠 Java Concepts Used
 
-View Mini Statement (last 3 transactions)
+This project is built using fundamental Java concepts:
 
-🧠 Concepts Used
+🔹 Object-Oriented Programming
 
-This project focuses on strong fundamentals of Java:
+Encapsulation using private data members
 
-Object-Oriented Programming (OOP)
+Public methods to access and modify account details
 
-Encapsulation using private variables and public methods
+Class-based structure (BankAccount, BankApp)
 
-Class and object design
+🔹 Java Collections
 
-Collections Framework
+ArrayList<String> used to store transaction history dynamically
 
-ArrayList used to store transaction history dynamically
+🔹 Control Flow
 
-Control Statements
+Loops for menu-driven system
 
-Loops for menu-driven interface
+Conditional statements for validations and decision-making
 
-Conditional statements for validations
+🔹 User Input Handling
 
-User Input Handling
+Scanner class for interactive console input
 
-Java Scanner class for interactive console input
+🔹 Modular Programming
 
-Modular Programming
-
-Separate methods for Bank and ATM sections
+Separate methods for Bank Section and ATM Section
 
 🗂 Project Structure
 BankApp.java
- ├── BankAccount class
- │     ├── deposit()
- │     ├── withdraw()
- │     ├── linkAadhaar()
- │     ├── linkPAN()
- │     ├── changeName()
- │     ├── printTransactions()
- │     ├── miniStatement()
- │     └── getBalance()
- │
- └── BankApp class (Main)
-       ├── bankSection()
-       ├── atmSection()
-       └── main()
+│
+├── BankAccount Class
+│   ├── deposit()
+│   ├── withdraw()
+│   ├── displayDetails()
+│   ├── linkAadhaar()
+│   ├── linkPAN()
+│   ├── changeName()
+│   ├── printTransactions()
+│   ├── miniStatement()
+│   └── getBalance()
+│
+└── BankApp Class (Main Program)
+    ├── bankSection()
+    ├── atmSection()
+    └── main()
 
-▶ How to Run
+▶ How to Run the Project
+🔧 Requirements
 
-Install Java JDK 8 or later
+Java JDK 8 or later
+
+Any terminal / command prompt
+
+🚀 Steps
+
+Clone the repository or download the source code
 
 Save the file as BankApp.java
 
-Open terminal/command prompt in the project folder
+Open terminal in the project directory
 
-Compile:
+Compile the program:
 
 javac BankApp.java
 
 
-Run:
+Run the program:
 
 java BankApp
 
-🔮 Future Improvements
+🔮 Future Enhancements
 
-Add PIN authentication for ATM access
+🚀 Add PIN authentication for ATM security
+🚀 Store account data using File Handling or Database (MySQL)
+🚀 Support multiple bank accounts
+🚀 Add date & timestamp for each transaction
+🚀 Create a GUI version using Java Swing or JavaFX
 
-Store account data using file handling or database (MySQL)
+🎯 Learning Outcomes
 
-Support multiple accounts
+Through this project, I improved my understanding of:
 
-Add date & time stamps to transactions
+Designing real-world applications using Java
 
-Build a GUI version using Java Swing or JavaFX
+Applying OOP principles effectively
 
-🎯 Learning Outcome
+Managing transactions and user data
 
-This project helped strengthen my understanding of:
+Writing structured and modular programs
 
-Designing real-world systems using Java
+👨‍💻 Author
 
-Managing state and transactions
-
-Writing structured, modular programs
+Shivam Torvi
+Java Developer | Learning DSA & Software Development
